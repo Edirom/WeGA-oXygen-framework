@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" xml:lang="de" xml:id="${id}" telota:doctype="briefedition_xyz_letter">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Briefedition XYZ</title>
+                </edition>
+                <respStmt>
+                    <name>Max Mustermann</name>
+                    <resp>Herausgeber</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Mustermanns Forschungsinstitut</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>Stadtarchiv Musterhausen</institution>
+                        <repository>Archiv</repository>
+                        <idno>Y123</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc />
+    </teiHeader>
+    <text>
+        <body>
+            <div type="Schreibakt">
+                <opener>
+                    <dateline rend="align(right)" />
+					<salute />
+                </opener>
+				<p />
+				<closer>
+					<salute />
+					<signed />
+				</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

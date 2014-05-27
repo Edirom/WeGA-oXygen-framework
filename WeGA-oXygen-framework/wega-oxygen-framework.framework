@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized version="15.2" xml:space="preserve">
+	<map>
+		<entry>
+			<String>document.types</String>
+			<documentTypeDescriptor-array>
+				<documentTypeDescriptor>
+					<field name="name">
+						<String>wega-oxygen-framework</String>
+					</field>
+					<field name="schemaDescriptor">
+						<null/>
+					</field>
+					<field name="classpath">
+						<String-array>
+							<String>${framework}/ediarum.jar</String>
+						</String-array>
+					</field>
+					<field name="parentClassLoaderID">
+						<null/>
+					</field>
+					<field name="authorExtensionDescriptor">
+						<authorExtension>
+							<field name="cssDescriptors">
+								<cssFile-array>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/standard.css</String>
+										</field>
+										<field name="title">
+											<String></String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+								</cssFile-array>
+							</field>
+							<field name="mergeCSSsFromDocument">
+								<Boolean>false</Boolean>
+							</field>
+							<field name="actionDescriptors">
+								<action-array>
+									<action>
+										<field name="id">
+											<String>persID</String>
+										</field>
+										<field name="name">
+											<String>Person ID</String>
+										</field>
+										<field name="description">
+											<String>Person ID vervollständigen</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::persName or self::author or self::editor</String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>URL</String>
+																<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/ediarum.xml</String>
+															</entry>
+															<entry>
+																<String>attribute name</String>
+																<String>key</String>
+															</entry>
+															<entry>
+																<String>attribute value</String>
+																<String>@id</String>
+															</entry>
+															<entry>
+																<String>expression</String>
+																<String>/span</String>
+															</entry>
+															<entry>
+																<String>node</String>
+																<String>//li</String>
+															</entry>
+															<entry>
+																<String>xpath to element of the attribute</String>
+																<String>./self::*</String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::text</String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>URL</String>
+																<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/ediarum.xml</String>
+															</entry>
+															<entry>
+																<String>element</String>
+																<String>&lt;persName xmlns='http://www.tei-c.org/ns/1.0' /></String>
+															</entry>
+															<entry>
+																<String>expression</String>
+																<String>/span</String>
+															</entry>
+															<entry>
+																<String>node</String>
+																<String>//li</String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>org.bbaw.telota.ediarum.InsertRegisterOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addName</String>
+										</field>
+										<field name="name">
+											<String>add Name</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String>file:/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/Bildschirmfoto%202014-05-06%20um%2010.20.29.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>element</String>
+																<String>&lt;persName xmlns="http://www.tei-c.org/ns/1.0"/></String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addworkName</String>
+										</field>
+										<field name="name">
+											<String>Add workName</String>
+										</field>
+										<field name="description">
+											<String>add workName Element</String>
+										</field>
+										<field name="largeIconPath">
+											<String>file:/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/Bildschirmfoto%202014-05-06%20um%2010.20.25.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>element</String>
+																<String>&lt;workName xmlns='http://www.tei-c.org/ns/1.0' /></String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addplaceName</String>
+										</field>
+										<field name="name">
+											<String>Add placeName</String>
+										</field>
+										<field name="description">
+											<String>add placeName Element</String>
+										</field>
+										<field name="largeIconPath">
+											<String>file:/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/Bildschirmfoto%202014-05-06%20um%2010.20.18.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;placeName xmlns='http://www.tei-c.org/ns/1.0' >&lt;settlement>&lt;/settlement>&lt;/placeName></String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addNameElement</String>
+										</field>
+										<field name="name">
+											<String>add NameElement</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>first action</String>
+																<String>addName</String>
+															</entry>
+															<entry>
+																<String>second action</String>
+																<String>persID</String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>org.bbaw.telota.ediarum.MultipleActionsOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addcharacterName</String>
+										</field>
+										<field name="name">
+											<String>Add characterName</String>
+										</field>
+										<field name="description">
+											<String>add characterName Element</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<map>
+															<entry>
+																<String>element</String>
+																<String>&lt;characterName xmlns='http://www.tei-c.org/ns/1.0' /></String>
+															</entry>
+														</map>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+									</action>
+								</action-array>
+							</field>
+							<field name="menubarDescriptor">
+								<menu>
+									<field name="label">
+										<String>Menü</String>
+									</field>
+									<field name="accessKey">
+										<null/>
+									</field>
+									<field name="iconPath">
+										<null/>
+									</field>
+									<field name="menuEntriesDescriptorList">
+										<menuEntry-array>
+											<menuItem>
+												<field name="actionID">
+													<String>persID</String>
+												</field>
+											</menuItem>
+										</menuEntry-array>
+									</field>
+								</menu>
+							</field>
+							<field name="popupMenuDescriptor">
+								<menu>
+									<field name="label">
+										<String>Kontextmenü</String>
+									</field>
+									<field name="accessKey">
+										<null/>
+									</field>
+									<field name="iconPath">
+										<null/>
+									</field>
+									<field name="menuEntriesDescriptorList">
+										<menuEntry-array>
+											<menuItem>
+												<field name="actionID">
+													<String>addcharacterName</String>
+												</field>
+											</menuItem>
+											<menuItem>
+												<field name="actionID">
+													<String>addName</String>
+												</field>
+											</menuItem>
+											<menuItem>
+												<field name="actionID">
+													<String>addplaceName</String>
+												</field>
+											</menuItem>
+											<menuItem>
+												<field name="actionID">
+													<String>addworkName</String>
+												</field>
+											</menuItem>
+											<menuItem>
+												<field name="actionID">
+													<String>persID</String>
+												</field>
+											</menuItem>
+										</menuEntry-array>
+									</field>
+								</menu>
+							</field>
+							<field name="toolbarDescriptor">
+								<toolbar>
+									<field name="id">
+										<String>Symbolleiste</String>
+									</field>
+									<field name="type">
+										<Integer>2</Integer>
+									</field>
+									<field name="largeIconPath">
+										<null/>
+									</field>
+									<field name="smallIconPath">
+										<null/>
+									</field>
+									<field name="toolbarEntriesDescriptorList">
+										<toolbarEntry-array>
+											<toolbarItem>
+												<field name="actionID">
+													<String>addworkName</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>addName</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>addplaceName</String>
+												</field>
+											</toolbarItem>
+										</toolbarEntry-array>
+									</field>
+								</toolbar>
+							</field>
+							<field name="additionalToolbarsDescriptors">
+								<null/>
+							</field>
+							<field name="contextualItems">
+								<contextProvider>
+									<field name="items">
+										<contextItem-array/>
+									</field>
+									<field name="removeItems">
+										<null/>
+									</field>
+								</contextProvider>
+							</field>
+							<field name="tableSupportClassName">
+								<null/>
+							</field>
+							<field name="tableColWidthSupportClassName">
+								<null/>
+							</field>
+							<field name="customReferencesResolver">
+								<null/>
+							</field>
+							<field name="authorExtensionStateListener">
+								<null/>
+							</field>
+							<field name="attributesRecognizer">
+								<null/>
+							</field>
+						</authorExtension>
+					</field>
+					<field name="templatesLocations">
+						<String-array>
+							<String>${frameworkDIR}/templates</String>
+						</String-array>
+					</field>
+					<field name="xmlCatalogs">
+						<String-array/>
+					</field>
+					<field name="description">
+						<String></String>
+					</field>
+					<field name="doctypeRules">
+						<documentTypeRule-array>
+							<documentTypeRule>
+								<field name="namespace">
+									<String>*</String>
+								</field>
+								<field name="rootElem">
+									<String>*</String>
+								</field>
+								<field name="fileName">
+									<String>*</String>
+								</field>
+								<field name="publicID">
+									<String>*</String>
+								</field>
+								<field name="javaRuleClass">
+									<String></String>
+								</field>
+								<field name="attributeLocalName">
+									<String>*</String>
+								</field>
+								<field name="attributeNamespace">
+									<String>*</String>
+								</field>
+								<field name="attributeValue">
+									<String>*</String>
+								</field>
+							</documentTypeRule>
+						</documentTypeRule-array>
+					</field>
+					<field name="scenarios">
+						<scenario-array/>
+					</field>
+					<field name="validationScenarios">
+						<validationScenario-array>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/xml</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${currentFileURL}</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>4</Integer>
+													</field>
+													<field name="uri">
+														<String>https://raw.githubusercontent.com/Edirom/WeGA-ODD/master/schema/de/wegaLetter.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>WeGA Briefe</String>
+								</field>
+							</validationScenario>
+						</validationScenario-array>
+					</field>
+					<field name="defaultValidationScenarios">
+						<null/>
+					</field>
+					<field name="defaultTransformationScenarios">
+						<null/>
+					</field>
+					<field name="extensionsBundleClassName">
+						<null/>
+					</field>
+					<field name="useImposedInitialPage">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="imposedInitialPage">
+						<String>Author</String>
+					</field>
+					<field name="elementLocatorExtension">
+						<null/>
+					</field>
+					<field name="schemaManagerFilterExtension">
+						<null/>
+					</field>
+					<field name="authorSWTDndExtension">
+						<null/>
+					</field>
+					<field name="textSWTDndExtension">
+						<null/>
+					</field>
+					<field name="authorSwingDndExtension">
+						<null/>
+					</field>
+					<field name="cssStylesFilterExtension">
+						<null/>
+					</field>
+					<field name="attributesValueEditor">
+						<null/>
+					</field>
+					<field name="priority">
+						<Integer>3</Integer>
+					</field>
+					<field name="xmlNodeCustomizerExtension">
+						<null/>
+					</field>
+					<field name="externalObjectInsertionHandler">
+						<null/>
+					</field>
+					<field name="customAttributeValueEditor">
+						<null/>
+					</field>
+				</documentTypeDescriptor>
+			</documentTypeDescriptor-array>
+		</entry>
+	</map>
+</serialized>
