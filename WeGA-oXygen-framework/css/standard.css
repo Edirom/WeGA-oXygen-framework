@@ -1058,13 +1058,9 @@ Screen {
   background-color: #FFCC99;
    }
 comment{
-    /*display: none;*/
-    visibility: hidden;
-/*     height: 0; 
-     overflow: hidden;*/
+     visibility:-oxy-collapse-text;
 }
 persName,editor,author {
-    content:url('C:\Users\Xianghua\Desktop\kopf.png');
-   /* background-repeat : no-repeat; */
+    content:url('/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/kopf.png');
     color:green;
 }
