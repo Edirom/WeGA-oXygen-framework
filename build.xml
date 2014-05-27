@@ -19,7 +19,9 @@
             </filterset>
         </copy>
         <zip destfile="${build.dir}/${project.title}-${project.version}.zip">
-            <fileset dir="WeGA-oXygen-framework/"/>
+            <fileset dir=".">
+                <include name="WeGA-oXygen-framework/"/>
+            </fileset>
         </zip>
     </target>
 </project>
