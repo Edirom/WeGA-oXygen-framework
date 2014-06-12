@@ -1062,5 +1062,8 @@ comment{
 }
 persName,editor,author {
     content:url('/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/kopf.png');
+    color:red;
+}
+persName[key],editor[key],author[key]{
     color:green;
 }

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" xml:lang="de" xml:id="${id}" telota:doctype="briefedition_xyz_letter">
+<?xml-model href="https://raw.githubusercontent.com/Edirom/WeGA-ODD/master/schema/de/wegaLetters.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/Edirom/WeGA-ODD/master/schema/de/wegaLetters.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title>
+                <title level="s">WeGA, Briefe, Digitale Edition</title>
+                <title level="a"><!-- unbedingt auszufüllen --></title>
             </titleStmt>
-            <editionStmt>
-                <edition>
-                    <title>Briefedition XYZ</title>
-                </edition>
-                <respStmt>
-                    <name>Max Mustermann</name>
-                    <resp>Herausgeber</resp>
-                </respStmt>
-            </editionStmt>
             <publicationStmt>
                 <publisher>Mustermanns Forschungsinstitut</publisher>
             </publicationStmt>
@@ -29,18 +23,13 @@
         </fileDesc>
         <profileDesc />
     </teiHeader>
-    <text>
+    <text type="">
         <body>
-            <div type="Schreibakt">
-                <opener>
-                    <dateline rend="align(right)" />
-					<salute />
-                </opener>
-				<p />
-				<closer>
-					<salute />
-					<signed />
-				</closer>
+            <div type="address">
+                
+            </div>
+            <div type="writingSession" n="1">
+                
             </div>
         </body>
     </text>
