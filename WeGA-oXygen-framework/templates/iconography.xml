@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Weber, gemalt von Bardua</title>
+                <author key="A000084">Caroline Bardua</author>
+                <editor>Veit, Joachim</editor>
+                <editor>Stadler, Peter</editor>
+                <funder>
+                    <name>Carl-Maria-von-Weber-Gesamtausgabe</name>
+                    <address>
+                        <street>Gartenstrasse 20</street>
+                        <postCode>32756</postCode>
+                        <placeName>
+                            <country>D</country>
+                            <settlement>Detmold</settlement>
+                        </placeName>
+                    </address>
+                </funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>Copyright © 2010, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <figure n="portrait">
+                    <figDesc>
+                        <listPerson>
+                            <head>Associated Persons</head>
+                            <person corresp="A002068"/>
+                        </listPerson>
+                    </figDesc>
+                    <graphic url="weber_bardua.jpg" width="1176px" height="1556px"/>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

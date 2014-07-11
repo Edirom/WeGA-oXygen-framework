@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaPersons.rng" type="xml"?>
+<person xmlns="http://www.tei-c.org/ns/1.0">
+    <!--fffi-person_Acerbi_3-->
+    <idno type="gnd">119372843</idno>
+    <persName type="reg">
+        <surname>Acerbi</surname>, <forename>Giuseppe</forename>
+    </persName>
+    <birth>
+        <date when="1773-05-03"/>
+        <placeName>
+            <settlement>Castel-Goffredo (Mantua)</settlement>
+        </placeName>
+    </birth>
+    <death>
+        <date when="1846-08-25"/>
+        <placeName>
+            <settlement>Mantua</settlement>
+        </placeName>
+    </death>
+    <sex>m</sex>
+    <occupation>Forschungsreisender</occupation>
+    <occupation>Geograph</occupation>
+    <occupation>Literat</occupation>
+    <residence>
+        <country>Italien</country>
+    </residence>
+    <note type="bioSummary">Reisen durch Deutschland, Dänemark, Schweden, England; 
+        in Zusammenhang mit <persName key="A002025">Abbé Voglers</persName> Terzett <workName>L'invocazione del Sole alle mezza notte in Laponia</workName> (<rs type="letter" key="A040151">Brief von Weber an Susan vom 2. April 1804</rs>) erwähnt.
+    </note>
+    <!--NAME: Acerbi
+DATEN: 1773-1846??
+BERUF: 
+WIRKORT: 
+LEBENSD: 
+GEBNAME: Joseph Cavaliere ???
+KONTAKT: 
+KURZBIO: 
+WERKE: 
+SEK-LIT: 
+K-ARCHIV: 
+N-VARIANTEN: 
+A-QUELLEN: 
+VERWEIS: 
+DATEN-Q: 
+XXX: 
+YYY: 
+ZZZ: ",1804,"-->
+</person>

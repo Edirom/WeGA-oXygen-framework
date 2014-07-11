@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaWorks.rng" type="xml"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <altId type="WeV" subtype="A" n="1">A.1</altId>
+        <altId type="JV">Anh. 8</altId>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Missa solenne</title>
+                <respStmt>
+                    <persName role="cmp" dbkey="A002068">Weber, Carl Maria
+                        von</persName>
+                    <persName role="dte" dbkey="A001783">Schwarzenberg, Ernst Fürst
+                        von</persName>
+                </respStmt>
+            </titleStmt>
+            <pubStmt>
+                <respStmt n="WeGA">
+                    <persName role="edt">Veit, Joachim</persName>
+                </respStmt>
+                <address>
+                    <addrLine>Gartenstrasse 20</addrLine>
+                    <addrLine>32756</addrLine>
+                    <addrLine>Detmold</addrLine>
+                    <addrLine>Germany</addrLine>
+                </address>
+                <date>2011</date>
+                <availability>
+                    <!--           Zu überarbeiten #PS         -->
+                    <useRestrict>Freely distributable under a CSA</useRestrict>
+                </availability>
+                <!-- <respstmt n="Schott">
+                    <corpname>Schott Music International</corpname>
+                    <persname role="edt">Kreher, Dagmar</persname>
+                    <persname role="editorial_assistant">Ziegler, Frank</persname>
+                    <persname role="editorial_assistant">Veit, Ottokar</persname>
+                </respstmt>
+                <date>1998</date>
+                <availability>
+                    <userestrict>nicht online verfügbar</userestrict>
+                </availability>-->
+            </pubStmt>
+            <seriesStmt n="WeGA">
+                <title level="s" n="1">Kirchenmusik</title>
+                <title level="a" n="1">Missa solenne ("Salzburger Jugendmesse")</title>
+            </seriesStmt>
+            <!--<notesstmt>
+                <annot><!-\- mit einer ref könnte man hier die Werkzählungen erläutern -\-></annot>
+                <!-\- #VE: Axel packt hier ein notesstmt mit annot vom type "general description" und links hin  -\->
+            </notesstmt>-->
+            <!--<sourcedesc>
+                <!-\- Beschreibung der Quelle (Maße, Umfänge, Beschaffenheit etc. -\->
+                <!-\- optional -\->
+                <source>
+                    <!-\- #VE: hier können eigene titlestmt hin!! und eigene pubstmt -\->
+                    <pubstmt/>
+                    <physdesc>
+                        <titlepage>
+                            <p/>
+                        </titlepage>
+                    </physdesc>
+                    <!-\- #VE. bei Axel hier noch die phyloc mit Bibliotheksangabe, Signatur usw.; provenance!! (ist für unsere Quellen sehr nützlich; auch seine classification mit keywords!)  -\->
+                </source>
+            </sourcedesc>-->
+        </fileDesc>
+        <!--<encodingdesc>
+            <!-\- hier können editorische Prinzipien/ Richtlinien eingefügt werden -\->
+            <projectdesc>
+                <p/>
+            </projectdesc>
+        </encodingdesc>-->
+        <workDesc>
+            <work>
+                <history>
+                    <p>Komponiert vor <date notafter="1799">1799</date>.</p>
+                </history>
+            </work>
+        </workDesc>
+        <revisionDesc>
+            <change>
+                <respStmt>
+                    <persName dbkey="A009001">Peter Stadler</persName>
+                </respStmt>
+                <changeDesc>
+                    <p>Automatically transformed to current schema version 2012 (2.0.0)</p>
+                </changeDesc>
+                <date isodate="2012-10-30"/>
+            </change>
+            <change>
+                <respStmt>
+                    <persName>AF</persName>
+                </respStmt>
+                <changeDesc>
+                    <p>Erstellen der Datei</p>
+                </changeDesc>
+                <date isodate="2011-03-01">1. März 2011</date>
+            </change>
+        </revisionDesc>
+    </meiHead>
+    <music>
+        <group>
+            <music>
+                <!--<front>
+                    <titlepage>
+                        <p/>
+                    </titlepage>
+                </front>-->
+                <body>
+                    <mdiv>
+                        <score>
+                            <scoreDef key.pname="e" key.accid="f" key.mode="major">
+                                <staffGrp>
+                                    <staffGrp n="1">
+                                        <staffDef label.abbr="2 Ob"/>
+                                        <staffDef label.abbr="2 Clni"/>
+                                        <staffDef label.abbr="2 Cor"/>
+                                        <staffDef label.abbr="Timp"/>
+                                        <staffDef label.abbr="2 Vl"/>
+                                        <staffDef label.abbr="Vla"/>
+                                        <staffDef label.abbr="Cb"/>
+                                        <staffDef label.abbr="B (Vc/Cb)"/>
+                                        <staffDef label.abbr="Org"/>
+                                    </staffGrp>
+                                    <staffGrp n="2">
+                                        <staffDef label.abbr="S"/>
+                                        <staffDef label.abbr="A"/>
+                                        <staffDef label.abbr="T"/>
+                                        <staffDef label.abbr="B"/>
+                                    </staffGrp>                                    
+                                    <!--<staffdef>
+                                        <!-\- Informationen zur Schlüsselung und Vorzeichnung etc. -\->
+                                        <clef/>
+                                        <keysig/>
+                                    </staffdef>-->
+                                </staffGrp>
+                            </scoreDef>
+                            <!--<section>
+                                <measure>
+                                    <dir><!-\- hier kann Text, der an der Musik steht untergebracht werden -\-></dir>
+                                </measure>
+                            </section>-->
+                        </score>
+                    </mdiv>
+                </body>
+            </music>
+        </group>
+    </music>
+</mei>

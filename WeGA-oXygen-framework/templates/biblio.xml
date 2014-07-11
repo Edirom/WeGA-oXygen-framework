@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaBiblio.rng" type="xml"?>
+<biblStruct xmlns="http://www.tei-c.org/ns/1.0">
+    <analytic>
+        <title level="a">Herzog Eugen (I.) von Württemberg (1758–1822). Förderer Carl-Maria von Webers</title>
+        <author>Oliver Dieter M. Sperling</author>
+    </analytic>
+    <monogr>
+        <title level="j">Schlesische Geschichtsblätter</title>
+        <imprint>
+            <biblScope type="vol">37</biblScope>
+            <biblScope type="issue">2<!-- (August)--></biblScope>
+            <biblScope type="pp">57–64</biblScope>
+            <date when="2010">2010</date>
+        </imprint>
+    </monogr>
+</biblStruct>
