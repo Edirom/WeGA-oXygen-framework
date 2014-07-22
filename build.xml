@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="zip" name="WeGA-oXygen-framework">
-    <property name="project.version" value="0.1.0"/>
-    <property name="project.title" value="WeGA-oXygen-framework"/>
-    <property name="build.dir" value="build"/>
+<project default="dist" name="WeGA-oXygen-framework">
     
-    <target name="rebuild" depends="clean,zip"/>
+    <!-- import default properties from file -->
+    <property file="local.build.properties"/>
+    <property file="build.properties"/>
+    
+    <target name="rebuild" depends="clean,dist"/>
     
     <target name="clean">
-        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
     </target>
     
-    <target name="zip">
-        <mkdir dir="${build.dir}"/>
-        <copy file="WeGA-oXygen-framework.xml.tmpl" tofile="${build.dir}/WeGA-oXygen-framework.xml" filtering="true" overwrite="true">
+    <target name="dist">
+        <mkdir dir="${dist.dir}"/>
+        <copy file="WeGA-oXygen-framework.xml.tmpl" tofile="${dist.dir}/WeGA-oXygen-framework.xml" filtering="true" overwrite="true">
             <filterset>
                 <filter token="title" value="${project.title}"/>
                 <filter token="version" value="${project.version}"/>
             </filterset>
         </copy>
-        <zip destfile="${build.dir}/${project.title}-${project.version}.zip">
+        <zip destfile="${dist.dir}/${project.title}-${project.version}.zip">
             <fileset dir=".">
                 <include name="WeGA-oXygen-framework/"/>
             </fileset>
         </zip>
+    </target>
+    
+    <target name="sign" depends="dist">
+        <signjar alias="${sign.alias}" jar="${dist.dir}/${project.title}-${project.version}.zip" storepass="${sign.pass}"/>
     </target>
 </project>
