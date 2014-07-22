@@ -1,0 +1,9 @@
+Todo List für weitere Entwicklung:
+- Framework verteilen(extern)
+- Framework installieren:
+  1. Optionen > Einstellungen > Add-ons: URL von XML-Datei hinzufügen(externe URL und externer Pfad zu .zip Datei)
+  2. Hilfe > Add-ons verwalten: Framework installieren
+- URLs der Registerdatei in Aktionen auf Server umstellen
+- Aktion 'generateDocID' erweitern
+- Aktion 'persID' erweitern für workID,placeID,usw.
+

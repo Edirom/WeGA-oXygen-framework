@@ -1,28 +1,8 @@
-/* =============================================================
-    CSS2 specification for TEI in oXygen.
- derived from stylesheet by
-    Author: Adrian Edwards (adrian_edwards@yahoo.com)
-    Date:   2000-04-19
- edited by Sebastian Rahtz (sebastian.rahtz@oucs.ox.ac.uk)
-            2001-05-06
- 2003-08-29 start of new parent div resets child auto-count. kl
- 2003-11-06 list attr list-style-type was none, now disc. kl
- 2007-06  reworking for TEI P5 and oxygen
 
-$LastChangedDate$, $LastChangedRevision$, $LastChangedBy$
-============================================================= */
-/* Use Times New Roman for default font */
-TEI {
-}
 abbr {
   display: inline;
 }
-add {
-  display: inline;
-  color: green;
-  background-color: inherit;
-  text-decoration: underline;
-}
+
 address {
   display: block;
   margin-top: 2em;
@@ -34,51 +14,11 @@ addrLine {
   display: block;
   white-space: nowrap;
 }
-anchor {
-  display: none;
-}
-argument {
-  display: block;
-  margin-bottom: 0.5em;
-}
-att {
-  display: inline;
-  font-family: sans-serif;
-  color: blue;
-  background-color: inherit;
-}
-att:before {
-  content: "@";
-}
+
 author {
   display: inline;
 }
     
-back {
-  display: block;
-  border: thin black solid;
-  margin-top: 1em;
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-}
-bibl {
-  display: inline;
-}
-    
-argument > bibl, body > bibl, cit > bibl, div > bibl, div0 > bibl, div1 > bibl, div2 > bibl, div3 > bibl, div4 > bibl, div5 > bibl, div6 > bibl, div7 > bibl, epigraph > bibl, listBibl > bibl > bibl, taxonomy > bibl {
-  display: block;
-  margin-bottom: 0.5em;
-}
-biblFull {
-  display: inline;
-}
-    
-argument > biblFull, body > biblFull, cit > biblFull, div > biblFull, div0 > biblFull, div1 > biblFull, div2 > biblFull, div3 > biblFull, div4 > biblFull, div5 > biblFull, div6 > biblFull, div7 > biblFull, epigraph > biblFull, listBibl > biblFull > biblFull, taxonomy > biblFull {
-  display: block;
-  margin-bottom: 0.5em;
-}
 biblScope {
   display: inline;
 }
@@ -906,7 +846,7 @@ unclear {
   font-style: italic;
 }
 /* header-related material */
-teiHeader {
+teiHeader, meiHead {
   display: block;
   color: black;
   background-color: rgb(251, 242, 234);
@@ -1020,7 +960,7 @@ Input {
 	   }
 Key {
 	 font-family: monospace;
-         text-decoration: underline;
+     text-decoration: underline;
 	 color: green;
 	 background-color: inherit;
 	 }
@@ -1057,13 +997,22 @@ Screen {
   color: inherit;
   background-color: #FFCC99;
    }
+   
+   
 comment{
+/*    display: none;*/
+    /*visibility: hidden;*/
+ /*    height: 0; 
+     overflow: hidden;*/
      visibility:-oxy-collapse-text;
 }
 persName,editor,author {
-    content:url('/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/kopf.png');
+    content:url('../images/kopf.png');
     color:red;
 }
 persName[key],editor[key],author[key]{
     color:green;
+}
+work {
+    content:url('../images/werk.png');    
 }
