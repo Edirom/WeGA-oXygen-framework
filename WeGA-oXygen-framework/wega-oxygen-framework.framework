@@ -1,10 +1,853 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="15.2" xml:space="preserve">
+<serialized version="16.0" xml:space="preserve">
 	<map>
 		<entry>
 			<String>document.types</String>
 			<documentTypeDescriptor-array>
 				<documentTypeDescriptor>
+					<field name="extensionPatch">
+						<documentTypeDescriptorPatch>
+							<field name="patchList">
+								<list>
+									<poPatch>
+										<field name="fieldPath">
+											<String>name</String>
+										</field>
+										<field name="index">
+											<Integer>-1</Integer>
+										</field>
+										<field name="value">
+											<String>wega-oxygen-framework - Dateiendung</String>
+										</field>
+										<field name="patchHandling">
+											<String>set</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[0]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[0]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[0]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>self::persName or self::author or self::editor</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>URL</String>
+															<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/persons.xml</String>
+														</entry>
+														<entry>
+															<String>attribute name</String>
+															<String>key</String>
+														</entry>
+														<entry>
+															<String>attribute value</String>
+															<String>@id</String>
+														</entry>
+														<entry>
+															<String>expression</String>
+															<String>/span</String>
+														</entry>
+														<entry>
+															<String>node</String>
+															<String>//li</String>
+														</entry>
+														<entry>
+															<String>xpath to element of the attribute</String>
+															<String>./self::*</String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>6</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>addNameElement</String>
+												</field>
+												<field name="name">
+													<String>add Name Element</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>https://euryanthe.de/wega/dev/ediarum.xql?places</String>
+																	</entry>
+																	<entry>
+																		<String>element</String>
+																		<String>"&lt;persName xmlns='http://www.tei-c.org/ns/1.0' />"</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>7</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>generateDocID</String>
+												</field>
+												<field name="name">
+													<String>generate DocID</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/person[not(@xml:id)]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/persID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/person</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaLetters')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/letterID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/TEI</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'tei_all')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/iconographyID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/TEI</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaBiblio')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/biblioID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/biblStruct</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaDiaries')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/diaryID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/ab</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaNews')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/newsID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/TEI</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaVar')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/varID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/TEI</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaWorks')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/workID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/mei</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>root()/processing-instruction()[contains(., 'wegaWritings')]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/dev/writingsID.xml</String>
+																	</entry>
+																	<entry>
+																		<String>attribute name</String>
+																		<String>xml:id</String>
+																	</entry>
+																	<entry>
+																		<String>attribute value</String>
+																		<String>@id</String>
+																	</entry>
+																	<entry>
+																		<String>expression</String>
+																		<String>/span</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>root()/TEI</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>addNameElement</String>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>addName</String>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>addPersName</String>
+												</field>
+												<field name="name">
+													<String>add Person Name</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String>${framework}/images/kopf.png</String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>element</String>
+																		<String>&lt;persName xmlns="http://www.tei-c.org/ns/1.0"/></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>generateDocID</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>addNameElement</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/popupMenuDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>addName</String>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/popupMenuDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>addPersName</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/popupMenuDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>generateDocID</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/popupMenuDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>addNameElement</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<toolbarItem>
+												<field name="actionID">
+													<String>addPersName</String>
+												</field>
+											</toolbarItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<toolbarItem>
+												<field name="actionID">
+													<String>generateDocID</String>
+												</field>
+											</toolbarItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>priority</String>
+										</field>
+										<field name="index">
+											<Integer>-1</Integer>
+										</field>
+										<field name="value">
+											<Integer>4</Integer>
+										</field>
+										<field name="patchHandling">
+											<String>set</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+								</list>
+							</field>
+							<field name="extendedPersistentObjectKey">
+								<String>wega-oxygen-framework</String>
+							</field>
+						</documentTypeDescriptorPatch>
+					</field>
 					<field name="name">
 						<String>wega-oxygen-framework</String>
 					</field>
@@ -70,7 +913,7 @@
 														<String>self::persName or self::author or self::editor</String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>URL</String>
 																<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/ediarum.xml</String>
@@ -95,7 +938,7 @@
 																<String>xpath to element of the attribute</String>
 																<String>./self::*</String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>org.bbaw.telota.ediarum.InsertRegisterAttributeOperation</String>
@@ -106,7 +949,7 @@
 														<String>ancestor-or-self::text</String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>URL</String>
 																<String>http://127.0.0.1:8080/exist/apps/WeGA-WebApp/ediarum.xml</String>
@@ -123,7 +966,7 @@
 																<String>node</String>
 																<String>//li</String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>org.bbaw.telota.ediarum.InsertRegisterOperation</String>
@@ -161,12 +1004,12 @@
 														<String></String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>element</String>
 																<String>&lt;persName xmlns="http://www.tei-c.org/ns/1.0"/></String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
@@ -186,7 +1029,7 @@
 											<String>add workName Element</String>
 										</field>
 										<field name="largeIconPath">
-											<String>file:/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/Bildschirmfoto%202014-05-06%20um%2010.20.25.png</String>
+											<String>${framework}/images/werk.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
@@ -204,12 +1047,12 @@
 														<String></String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>element</String>
 																<String>&lt;workName xmlns='http://www.tei-c.org/ns/1.0' /></String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
@@ -229,7 +1072,7 @@
 											<String>add placeName Element</String>
 										</field>
 										<field name="largeIconPath">
-											<String>file:/Network/Servers/cesti.bib.hfm-detmold.de/Users/zheng/Desktop/Bildschirmfoto%202014-05-06%20um%2010.20.18.png</String>
+											<String>${framework}/images/ort.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
@@ -247,12 +1090,12 @@
 														<String></String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
 																<String>&lt;placeName xmlns='http://www.tei-c.org/ns/1.0' >&lt;settlement>&lt;/settlement>&lt;/placeName></String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
@@ -290,7 +1133,7 @@
 														<String></String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>first action</String>
 																<String>addName</String>
@@ -299,7 +1142,7 @@
 																<String>second action</String>
 																<String>persID</String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>org.bbaw.telota.ediarum.MultipleActionsOperation</String>
@@ -337,12 +1180,12 @@
 														<String></String>
 													</field>
 													<field name="argValues">
-														<map>
+														<serializableOrderedMap>
 															<entry>
 																<String>element</String>
 																<String>&lt;characterName xmlns='http://www.tei-c.org/ns/1.0' /></String>
 															</entry>
-														</map>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
@@ -484,7 +1327,7 @@
 					</field>
 					<field name="templatesLocations">
 						<String-array>
-							<String>${frameworkDIR}/templates</String>
+							<String>${frameworkDir}/templates</String>
 						</String-array>
 					</field>
 					<field name="xmlCatalogs">
